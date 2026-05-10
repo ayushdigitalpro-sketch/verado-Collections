@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Verado | Premium Streetwear</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: white;
+      line-height: 1.6;
+    }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+      url('https://images.unsplash.com/photo-1523398002811-999ca8dec234?q=80&w=1600&auto=format&fit=crop') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .logo {
+      font-size: 4rem;
+      font-weight: bold;
+      letter-spacing: 6px;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      color: #d1d5db;
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      border-radius: 40px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #d1d5db;
+      transform: translateY(-3px);
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #cfcfcf;
+    }
+
+    section {
+      padding: 90px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      letter-spacing: 2px;
+    }
+
+    .about {
+      text-align: center;
+      max-width: 850px;
+    }
+
+    .about p {
+      color: #d1d5db;
+      font-size: 1.05rem;
+    }
+
+    .brand-grid,
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #181818;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: 0.3s;
+      border: 1px solid #262626;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #555;
+    }
+
+    .card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 10px;
+    }
+
+    .card-content p {
+      color: #bdbdbd;
+      font-size: 14px;
+    }
+
+    .premium-box {
+      background: linear-gradient(135deg, #1f1f1f, #0d0d0d);
+      padding: 50px;
+      border-radius: 25px;
+      text-align: center;
+      border: 1px solid #2f2f2f;
+    }
+
+    .premium-box p {
+      color: #d1d5db;
+      max-width: 800px;
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    .review-card {
+      background: #181818;
+      padding: 30px;
+      border-radius: 20px;
+      border: 1px solid #262626;
+    }
+
+    .review-card h4 {
+      margin-top: 15px;
+      color: #ffffff;
+    }
+
+    .stars {
+      color: gold;
+      font-size: 18px;
+    }
+
+    .shop-now {
+      text-align: center;
+    }
+
+    .shop-now p {
+      color: #d1d5db;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: #050505;
+      color: #8a8a8a;
+      font-size: 14px;
+    }
+
+    @media(max-width: 768px) {
+      .logo {
+        font-size: 2.7rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+      }
+
+      nav a {
+        margin: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#brand">Verado</a>
+    <a href="#premium">Premium Feels</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#shop">Shop Now</a>
+  </nav>
+
+  <header>
+    <div class="hero-content">
+      <div class="logo">VERADO</div>
+      <p>
+        Modern Luxury Streetwear Brand Designed For Style, Comfort, and Premium Everyday Fashion.
+      </p>
+
+      <a href="#shop" class="btn">Explore Collection</a>
+    </div>
+  </header>
+
+  <section id="about" class="about">
+    <h2 class="section-title">About Verado</h2>
+
+    <p>
+      Verado is a premium aesthetic streetwear brand focused on combining luxury fashion,
+      modern minimalism, and everyday comfort. Our collections are inspired by urban culture,
+      clean silhouettes, and timeless monochrome fashion trends.
+    </p>
+  </section>
+
+  <section id="brand">
+    <h2 class="section-title">Clothing Brand Verado</h2>
+
+    <div class="brand-grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1200&auto=format&fit=crop" alt="Streetwear Outfit">
+
+        <div class="card-content">
+          <h3>Luxury Streetwear</h3>
+          <p>
+            Oversized hoodies, premium cargos, and clean fits made for modern street fashion.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1200&auto=format&fit=crop" alt="Fashion Model">
+
+        <div class="card-content">
+          <h3>Minimal Aesthetic</h3>
+          <p>
+            Timeless black and white fashion combinations that elevate your everyday style.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop" alt="Premium Fashion">
+
+        <div class="card-content">
+          <h3>Premium Quality</h3>
+          <p>
+            High-quality fabrics and comfortable fits designed to feel luxurious and authentic.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="premium">
+    <h2 class="section-title">Premium Feels</h2>
+
+    <div class="premium-box">
+      <h3>Designed To Feel Expensive</h3>
+
+      <p>
+        Every Verado outfit is created with attention to detail, premium textures,
+        and modern aesthetics. From oversized silhouettes to luxury-inspired minimal designs,
+        Verado delivers confidence, comfort, and premium streetwear energy.
+      </p>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <h2 class="section-title">Customer Reviews</h2>
+
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>
+          “The quality feels amazing and the fit is absolutely perfect. Verado looks premium.”
+        </p>
+        <h4>- Customer Name</h4>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>
+          “Best streetwear brand for aesthetic fashion lovers. Clean designs and luxury vibes.”
+        </p>
+        <h4>- Customer Name</h4>
+      </div>
+
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>
+          “Comfortable, stylish, and modern. I wear Verado almost every day now.”
+        </p>
+        <h4>- Customer Name</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="shop" class="shop-now">
+    <h2 class="section-title">Shop Now</h2>
+
+    <p>
+      Discover the latest Verado premium streetwear collection.
+    </p>
+
+    <a href="#" class="btn">Visit Store</a>
+  </section>
+
+  <footer>
+    © 2026 Verado. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
